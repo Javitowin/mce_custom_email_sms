@@ -1,0 +1,39 @@
+{
+  "workflowApiVersion": "1.1",
+  "meta": {
+    "category": "message",
+    "icon": "icon.png"
+  },
+  "type": "REST",
+  "lang": {
+    "en-US": {
+      "name": "Email or SMS Sender",
+      "description": "Send Email or SMS via SFMC MessageDefinition"
+    }
+  },
+  "arguments": {
+    "execute": {
+      "inArguments": [],
+      "outArguments": [],
+      "url": "https://mce-custom-email-sms.onrender.com/api/execute"
+    }
+  },
+  "configurationArguments": {
+    "publish": {
+      "url": "https://mce-custom-email-sms.onrender.com/api/publish"
+    },
+    "validate": {
+      "url": "https://mce-custom-email-sms.onrender.com/api/validate"
+    },
+    "save": {
+      "url": "https://mce-custom-email-sms.onrender.com/api/save"
+    }
+  },
+  "userInterfaces": {
+    "configModal": {
+      "height": 600,
+      "width": 400,
+      "url": "https://mce-custom-email-sms.onrender.com/public/activity.html"
+    }
+  }
+}
